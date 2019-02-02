@@ -1,0 +1,48 @@
+.xiangce {
+    width: 921px;
+    padding: 0 23px;
+    padding-top:40px;
+}
+
+.xiangce h4 {
+    color: #555;
+    font-weight: 500;
+}
+.album{
+    display: flex;
+    flex-wrap: wrap;
+}
+.details {
+    float: left;
+    padding: 18px 20px;
+}
+
+.details img {
+    width: 160px;
+    height: 160px;
+    background: #63b2cd;
+}
+.details span{
+    color: #555;
+    display: block;
+    padding: 10px 0px;
+}
+.details h4{
+    font-size: 20px;
+    font-weight: 500;
+    padding: 20px 0px;
+}
+.details div{
+    width: 160px;
+    height: 160px;
+    background: rgb(158, 157, 157);
+    line-height: 160px;
+    text-align: center;
+    font-size: 80px;
+    font-weight: 400;
+    color: white;
+}
+.album :nth-child(n4){
+    padding-right: 0;
+}
+

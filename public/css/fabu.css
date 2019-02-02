@@ -1,0 +1,100 @@
+input,button,select,textarea{outline:none}
+input,button,select,textarea{outline:none}
+input,textarea{text-indent: 30px;}
+button{
+    margin: 0;
+    padding: 0;
+    border: 1px solid #999;
+    outline: none; 
+}
+textarea{resize:none}
+.content{
+    background: white;
+}
+.fabu{
+    width: 1228px;
+    margin: 0 auto;
+    padding-left: 73px;
+    padding-bottom: 166px;
+}
+.biaopian h4{
+    height: 48px;
+    line-height: 48px;
+    font-size: 16px;
+
+}
+.biaopian input{
+    width: 1080px;
+    height: 40px;
+    border: 1px solid #999;
+    border-radius: 10px;
+    font-size: 16px;
+}
+.neirong h4{
+    height: 48px;
+    line-height: 48px;
+    font-size: 16px;
+}
+.neirong-sr{
+    width: 1080px;
+    height: 175px;
+    border-radius: 10px;
+    font-size: 16px;
+    padding: 10px;
+}
+.tupianliebiao{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 40px;
+    
+}
+.tupian{
+    position: relative;
+    width: 100px;
+    height: 100px;
+    background: #fefefe;
+    border: 1px dashed  #666;
+    text-align: center;
+    line-height: 100px;
+    font-size: 30px;
+    color: #999;
+    margin-right: 24px;
+}
+.tupian input{
+    position:absolute;
+    top:0px;
+    left:0px;
+    opacity:0;
+    width:100px;
+    height:100px;
+}
+.fabu button{
+    background: #ff5079;
+    height: 50px;
+    width: 266px;
+    border-radius: 10px;
+    margin-top: 60px;
+    color: white;
+    font-size: 16px;
+    border: none;
+}
+.shortselect{
+    margin: 15px 0px;
+    background:#fafdfe;  
+    height:40px;  
+    width:260px;
+    font-size: 16px;
+    line-height:28px;  
+    border:1px solid #999;  
+    -moz-border-radius:2px;  
+    -webkit-border-radius:2px;  
+    border-radius:2px;
+    border-radius: 8px;
+}
+.fabu iframe{
+    margin: 0 auto;
+    width: 1230px;
+    height: 1200px;
+    border: none;
+    background: white;
+}

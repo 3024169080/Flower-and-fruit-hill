@@ -1,0 +1,63 @@
+.pay{
+  width: 1230px;
+  margin: 0 auto;
+  margin-top:30px;
+}
+.pay{
+  display: flex;
+  color: #444;
+}
+.pay .pay-l{
+  width:85%;
+}
+.pay .pay-r{
+  width: 15%;
+}
+.pay-l-top{
+  display:flex;
+}
+.pay-l-top img{
+  margin-right:20px;
+}
+.pay-l-main{
+  margin-top:20px;
+}
+.pay div p{
+  line-height:25px;
+}
+.pay div h3{
+  line-height:30px;
+  font-size:18px;
+}
+.btn{
+  margin-top:30px;
+  width: 130px;
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
+  background: #eb6877;
+  color: #fff;
+  border-radius:6px;
+}
+.selectpay{
+  margin: 0 auto;
+  margin-top:20px;
+}
+.selectpay li{
+  margin:0 auto;
+  width: 50%;
+  margin-top:5px;
+  text-align: center;
+  padding:10px;
+  border:1px solid #409EFF;
+  color: #409EFF;
+  cursor:pointer;
+}
+.selectpay li:hover{
+  background: #409EFF;
+  color: #fff;
+}
+.paynum{
+  padding-top:20px;
+  text-align: center;
+}

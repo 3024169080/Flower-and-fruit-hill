@@ -1,0 +1,28 @@
+.avatarinfo{
+  width: 100%;
+  height:300px;
+  background:url(../img/allbg.png) no-repeat;
+}
+.avatarinfo .info{
+  width: 250px;
+  height: 250px;
+  margin: 0 auto;
+  text-align: center;
+}
+.avatarinfo .info{
+  padding-top:60px;
+  font-size:16px;
+  color: #fff;
+}
+.avatarinfo .info img{
+  margin: 0 auto;
+}
+.avatarinfo .info p{
+  margin-top:10px;
+}
+.avatarinfo .info .ava_tit{
+  font-weight:bold;
+}
+.avatarinfo .info .guanzhu span{
+  margin:0 20px;
+}

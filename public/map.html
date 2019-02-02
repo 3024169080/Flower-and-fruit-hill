@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="multipart/form-data; charset=utf-8"/>
+    <meta charset="UTF-8">
+    <title>地图</title>
+	<script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
+	<link rel="stylesheet" href="https://cdn.90so.net/layui/2.4.5/css/layui.css">
+	<script src="https://cdn.90so.net/layui/2.4.5/layui.js" media="all"></script>
+<script>
+    layui.use('form', function () {
+        var form = layui.form; //只有执行了这一步，部分表单元素才会自动修饰成功
+
+        form.render();
+    });
+</script>
+</head>
+<body>
+<form action="" class="layui-form" method="post" enctype="multipart/form-data">
+	<div class="layui-form-item">
+		<label class="layui-form-label"><b style="color: #FF4040">*</b>举办地区:</label>
+		<div class="layui-input-inline">
+			<select name="aeAddress" lay-filter="leixing" id="aeAddress">
+				<option value="北京市">北京市</option>
+				<option value="天津市">天津市</option>
+				<option value="河北省">河北省</option>
+				<option value="山西省">山西省</option>
+				<option value="内蒙古">内蒙古</option>
+				<option value="辽宁省">辽宁省</option>
+				<option value="吉林省">吉林省</option>
+				<option value="黑龙江省">黑龙江省</option>
+				<option value="上海市">上海市</option>
+				<option value="江苏省">江苏省</option>
+				<option value="浙江省">浙江省</option>
+				<option value="安徽省">安徽省</option>
+				<option value="福建省">福建省</option>
+				<option value="江西省">江西省</option>
+				<option value="山东省">山东省</option>
+				<option value="河南省">河南省</option>
+				<option value="湖北省">湖北省</option>
+				<option value="湖南省">湖南省</option>
+				<option value="广东省">广东省</option>
+				<option value="广西省">广西省</option>
+				<option value="海南省">海南省</option>
+				<option value="重庆市">重庆市</option>
+				<option value="四川省">四川省</option>
+				<option value="贵州省">贵州省</option>
+				<option value="云南省">云南省</option>
+				<option value="西藏">西藏</option>
+				<option value="陕西省">陕西省</option>
+				<option value="甘肃省">甘肃省</option>
+				<option value="青海省">青海省</option>
+				<option value="宁夏">宁夏</option>
+				<option value="香港">香港</option>
+				<option value="澳门">澳门</option>
+				<option value="台湾省">台湾省</option>
+			</select>
+		</div>
+	</div>
+
+	<div class="layui-form-item">
+		<label class="layui-form-label"><b style="color: #FF4040">*</b>场馆地点:</label>
+		<div class="layui-input-inline">
+			<input type="text" name="aeFulladdress" id="aeFulladdress" lay-verify="title" autocomplete="off" class="layui-input getaddr">
+			<input type="text" style="display: none" name="aeGecode" id="aeGecode" >
+		</div>
+		<div class="layui-input-inline">
+			<button type="button" id="mapButton" class="layui-btn layui-btn-normal layui-btn-radius">搜索</button>
+		</div>
+		<div class="layui-form-mid layui-word-aux">请填写详细地址</div>
+	</div>
+	
+	<div class="layui-form-item">
+		<label class="layui-form-label"></label>
+		<div id="container" style="width: 500px;height: 320px"></div>
+	</div>
+</form>
+</body>
+<script type="text/javascript" src='https://webapi.amap.com/maps?v=1.4.12&key=47bfcf883ef8c4500b9c1aa17d70e1e6'></script>
+<script src="https://webapi.amap.com/ui/1.0/main.js?v=1.0.11"></script>
+<script type="text/javascript" src="https://cache.amap.com/lbs/static/addToolbar.js"></script>
+<script>
+
+    var map = new AMap.Map("container", {
+        resizeEnable: true
+    });
+
+    $("#mapButton").on("click",function () {
+        if ($("#aeGecode").val() != null && $("#aeGecode").val() != ''){
+            var map = new AMap.Map("container", {
+                resizeEnable: true
+            });
+        }
+        var address= $("#aeFulladdress").val(); //地址
+        var mapCity = $("#aeAddress").val();    //兴趣点城市
+        AMap.service(["AMap.PlaceSearch"], function() {
+            //构造地点查询类
+            var placeSearch = new AMap.PlaceSearch({
+                pageSize: 1, // 单页显示结果条数
+                pageIndex: 1, // 页码
+                city: mapCity, // 兴趣点城市
+                citylimit: true,  //是否强制限制在设置的城市内搜索
+                map: map, // 展现结果的地图实例
+                autoFitView: true // 是否自动调整地图视野使绘制的 Marker点都处于视口的可见范围
+            });
+            //关键字查询
+            placeSearch.search(address,function (status,res){
+                if (status === 'complete' && res.info === 'OK') {
+                    //TODO : 解析返回结果,如果设置了map和panel，api将帮助完成点标注和列表
+                    //经纬度赋值给input
+                    $("#aeGecode").val(res.poiList.pois[0].location);
+                }
+            });
+        });
+	});
+	// console.log(window.location.href,window.location.search)
+	var mapaddr=decodeURI(window.location.search.split('=')[1]);
+	$(".getaddr").val(mapaddr)
+</script>
+</html>
+  
+

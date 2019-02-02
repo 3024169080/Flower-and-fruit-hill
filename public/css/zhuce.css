@@ -1,0 +1,90 @@
+input{
+  outline: none;
+  border:none;
+}
+body{
+  background: #f5f5f5;
+  font-family:'微软雅黑';
+}
+img{
+  display: block;
+}
+*{
+  box-sizing:border-box;
+}
+.zhuce{
+  margin:0 auto;
+  width: 900px;
+  height: 500px;
+  margin-top:93px;
+  margin-bottom:93px;
+  background: #fff;
+  box-shadow:2px 2px 23px 1px #e5e5e5;
+  padding:30px;
+}
+.zhuce h3{
+  font-size:30px;
+  font-weight:300;
+  text-align:center;
+}
+.zhuce [type=text],.zhuce [type=password]{
+  border: 1px solid #ababab;
+  border-radius:5px;
+  background: #f5f5f5;
+  padding:0 10px;
+  line-height:30px;
+  font-size:14px;
+  margin-top:10px;
+  width: 100%;
+}
+.ipt{
+  display: flex; 
+}
+.ipt>div{
+  padding:30px;
+  width: 50%;
+  height: 100%;
+}
+.code{
+  display: flex;
+}
+.code .getcode{
+  margin-top:10px;
+  margin-left:5px;
+  width:50%;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  background: #999;
+  color: #fff;
+  border-radius:3px;
+}
+.code .getcode span{
+  display:inline-block;
+  width: 20px;
+  height: 20px;  
+  margin:0 5px;
+}
+.btn{
+  width: 280px;
+  height: 40px;
+  margin:0 auto;
+  background: #ff6c7c;
+  text-align: center;
+  line-height:40px;
+  margin-top:30px;
+  border-radius:6px;
+  color: #fff;
+}
+.other{
+  margin-top: 60px;
+  display: flex;
+  justify-content: space-around;
+}
+.other img{
+  width: 66px;
+  height: 66px;
+}
+.code .getc{
+  background: #ff6c7c;
+}

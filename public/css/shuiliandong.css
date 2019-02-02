@@ -1,0 +1,65 @@
+.pe{
+    width: 921px;
+}
+
+
+
+.msg-list{
+    width: 922px;
+    padding:20px;
+    margin-top:20px;
+    background: #fff;
+    box-shadow:-2px -3px 11px -4px #999;
+    border-radius:4px;
+    display: flex;
+  }
+  .msg-list img.ava{
+    width:58px;
+    height: 58px;
+    flex-shrink:0;
+    margin-right:20px;
+  }
+  .list-info{
+    width: 680px;
+  }
+  .info p:nth-child(2){
+    color: #666;
+  }
+  .ava-name{
+    color: #333;
+    line-height: 40px;
+    font-size:16px;
+  }
+  .ava-txt{
+    color: #666;
+  }
+  .ava-img{
+    margin:10px 0;
+    display: flex;
+  }
+  .ava-img img{
+    margin-right:10px;
+  }
+  
+  .ava-status ul{
+    margin-top:10px;
+    width: 254px;
+    float:right;
+  }
+  .ava-status ul li{      
+    float: left;
+    padding:0 10px;
+    display: flex;
+  }
+  .ava-status ul li img{
+    width: 120px;
+    height: 160px;
+  }
+  
+  .ava-status ul li span{
+    padding-left:5px;
+    color: #666;
+  }
+
+
+ 

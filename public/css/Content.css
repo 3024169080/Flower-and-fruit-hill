@@ -1,0 +1,67 @@
+.content{
+  width: 1230px;
+  margin:0 auto;
+  margin-top:20px;
+  background: #fff;
+}
+.content-header{
+  display: flex;
+  margin-left:64px;
+  padding-top:25px;
+}
+.user-name{
+  margin-left: 10px;
+}
+.content-content{
+  padding:5px 47px 35px 135px;
+}
+.content-img{
+  margin-top: 16px;
+}
+.content-send{
+ display: flex;
+ margin-top: 35px;
+}
+.content-send-ipt{
+  width: 927px;
+  height: 40px;
+  border: 1px solid #eee;
+  line-height: 30px;
+}
+.send{
+  width: 77px;
+  height: 38px;
+  margin: 0;
+  padding: 0;
+  margin-left: 38px;
+  border: 1px solid transparent;
+  border-radius: 10px;
+  outline: none;
+  background-color: #ff6c7d;
+  color: #fff;
+}
+.content-foot{
+  border-top:1px solid #fafafa;
+}
+.like{
+  width: 1046px;
+  padding: 28px 0;
+  margin: 0 auto;
+  display: flex;
+  
+}
+.content-like{
+  margin-left:38px;
+  display: flex;
+}
+.content-like span{
+  display: block;
+  font-size: 12px;
+  line-height: 22px;
+  color: #999;
+}
+.content-like img{
+  width: 18px;
+  height: 18px;
+  margin-right: 8px;
+}

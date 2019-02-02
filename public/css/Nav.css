@@ -1,0 +1,51 @@
+  .nav{
+    width: 1230px;
+    background: #fff;
+    margin:0 auto;
+    margin-top:20px;
+  }
+  .nav-tit{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-between;
+  }
+ .nav-tit li{
+    list-style: none;
+    display: flex;
+    margin-left:77px;
+    padding:22px 0;
+  }
+ .nav-tit li:first-child{
+    margin-left:10px;
+  }
+ .nav-tit li:nth-child(5){
+    margin-left:10px;
+  }
+ .nav-tit li:nth-child(4){
+    margin-right: 10px;
+  }
+ .nav-tit li:nth-child(8){
+    margin-right: 10px;
+  }
+ .nav-tit li img{
+    width: 100px;
+    height: 88px;
+  }
+  .text{
+    width: 130px;
+    height: 88px;
+    margin-left: 14px;
+  }
+  h5{
+    margin-top: 3px;
+    font-size: 16px;
+  }
+  .nav-brief{
+    margin-top: 14px;
+    line-height: 25px;
+    font-size: 14px;
+  }
+  .title{
+    padding:20px;
+    border-bottom:1px solid #dddddd;
+  }

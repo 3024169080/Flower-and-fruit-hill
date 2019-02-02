@@ -1,0 +1,88 @@
+
+.banner img{
+  width: 100%;
+}
+.manzhanmain{
+  width: 1230px;
+  margin: 0 auto;
+  margin-top:20px;
+}
+.addr1,.time{  
+  width: 1230px;
+  color: #666;
+  display: flex;
+}
+.addr1{
+  border-bottom:1px solid #e5e5e5;
+}
+.addr1 .city,.time .time-t{
+  flex-shrink:0;
+  margin-right:10px;
+}
+.addr1 ul li,.list ul li{
+  float:left;
+  width: 50px;
+  height: 30px;
+  color: #666;
+  text-align: center;
+  line-height:30px;
+  margin:5px 10px; 
+}
+.addr1 ul .changeaddr,.list ul .changemonths{
+  background:#eb6877;
+  color: #fff;
+}
+.list ul{
+  width: 1230px;
+  height: 40px;
+}
+.c-list{
+  padding:20px;
+  margin:10px 0;
+  background: #fff;
+  box-shadow:-2px -3px 11px -4px #999;
+  border-radius:4px;
+  display: flex;
+}
+.c-info{
+  margin-left:30px;
+}
+.c-tit{
+  width:960px;
+  display: flex;
+  justify-content: space-between;
+  color: #333;
+}
+.c-tit h3{
+  font-size:16px;
+  color: #666;
+  margin-bottom:30px;
+}
+.c-info p{
+  display: flex;
+  align-items: center;
+  line-height: 30px;
+  color:#666;
+}
+.c-info .price{
+  font-size: 20px;
+  color: #fcb078;
+}
+.fire{
+  color: #eb6877;
+}
+.btn{
+  margin-top:30px;
+  color: #fff;
+  width: 110px;
+  height: 30px;
+  background: #eb6877;
+  text-align: center;
+  line-height:30px;
+  border-radius:10px;
+}
+.nonum{
+  margin-top:50px;
+  text-align: center;
+  font-size:30px;
+}

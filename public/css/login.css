@@ -1,0 +1,67 @@
+.login{
+  width: 1100px;
+  margin: 0 auto;
+  margin-top: 50px;
+  display: flex;
+  align-items: center;
+}
+.login-ipt{
+  width: 500px;
+  height: 500px;
+}
+.login-ipt{
+  margin-top:140px;
+  padding:30px;
+}
+.login-ipt>div{
+  margin-top:20px;
+}
+.username,.password{
+  width: 455px;
+  height: 40px;
+  margin:10px 0;
+}
+.username input,.password input{
+  padding:0 10px;
+  background: #f5f5f5;
+  border-radius:5px;
+  border: 1px solid #e5e5e5;
+  width: 100%;
+  height: 100%;
+}
+.status{
+  padding-left:10px;
+  display: flex;
+  justify-content: space-between;
+}
+.status a{
+  color:#efa463;
+}
+.login-ipt .btn{
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-around;
+}
+.login-ipt .btn>div{
+  text-align: center;
+  width: 210px;
+  height: 45px;
+  border-radius:6px;
+  line-height:45px;
+  color: #fff;
+}
+.login-ipt .btn .btn-login{
+  background: #ffbc47;
+}
+.login-ipt .btn .btn-register{
+  background: #ff5079;
+}
+.login-ipt .other{
+  margin-top: 60px;
+  display: flex;
+  justify-content: space-around;
+}
+.login-ipt .other img{
+  width: 66px;
+  height: 66px;
+}

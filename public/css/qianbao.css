@@ -1,0 +1,229 @@
+.clearfix:after{
+    content:".";
+    height:0px;
+    display:block;
+    visibility:hidden;
+    clear: both;
+}
+.qian-box{
+    width: 100%;
+    background: #fff;
+}
+.qian-header{
+    width: 1230px;
+    height: 100px;
+    /* background: #eaeaea; */
+    margin: 0 auto;
+    border-bottom: 1px solid #eee;
+}
+.qian-header h2{
+    font-size:30px;
+    line-height: 75px;
+    text-indent: 12px;
+}
+.qian-header-hua{
+    text-indent: 12px;
+    line-height: 25px;
+    font-size: 16px;
+    font-weight: 700;
+}
+.qian-header-hua span{
+    /* float: left; */
+    margin-left: 12px;
+}
+.qian-cont-tp{
+    width: 1230px;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+.qian-cont-tp-lt{
+    width: 249px;
+    float: left;
+    text-align: center;
+    line-height: 40px;
+}
+.qian-cont-tp-lt img{
+    width: 249px;
+    height: 64px;
+}
+.qian-cont-tp-lt span{
+    font-size: 14px;
+}
+.qian-cont-tp-rt{
+    width: 960px;
+    margin-left: 21px;
+    border:1px solid #eee;
+    float:left;
+    padding-bottom: 50px;
+}
+.qian-cont-tp-rt h3{
+    font-size: 22px;
+    padding: 10px;
+    font-weight: 700;
+    border-bottom:1px solid #eee;
+}
+.qian-cont-tp-rt-ct{
+    padding: 10px;
+    font-size: 14px;
+}
+.qian-cont-tp-rt-ct input{
+    border: 1px solid #e5e5e5;
+}
+.qian-cont-tp-rt-ct-list-box{
+    width: 960px;
+}
+.qian-cont-tp-rt-ct-list{
+    margin-top: 30px;
+}
+.qian-cont-tp-rt-ct-list li{
+    width: 73px;
+    height: 48px;
+    border:1px solid #eee;
+    line-height: 48px;
+    text-align: center;
+    float: left;
+    margin-left: 75px;
+    font-size: 18px;
+}
+.qian-cont-zhifu-icon-box{
+    width: 960px;
+    margin-top: 10px;
+}
+.qian-cont-zhifu-icon{
+    width: 960px;
+    overflow: hidden;
+}
+.qian-cont-zhifu-icon span{
+    line-height: 80px;
+    float: left;
+}
+.qian-cont-zhifu-icon img{
+    width: 47px;
+    height: 47px;
+    float: left;
+    margin-top: 16px;
+    margin-left: 30px;
+}
+.qian-cont-zhifu-icon-box .qian-cont-zhifu-tp-rt-ct-queren{
+    width: 180px;
+    height: 40px;
+    background: #8dd9f1;
+    /* line-height: 0px; */
+    text-align: center;
+    font-size: 14px;
+    border-radius:5px;
+    margin-left: 200px;
+    color: white;
+}
+.qian-cont-tp-rt h4{
+    font-size: 18px;
+    padding: 10px;
+    font-weight: 700;
+    border-bottom:1px solid #eee;
+}
+.qian-cont-zhifu-shuoming p{
+    font-size: 14px;
+    padding: 10px;
+}
+.qian-cont-bm{
+    width: 1230px;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+.qian-cont-bm-lt{
+    width: 249px;
+    float: left;
+    text-align: center;
+    line-height: 40px;
+}
+.qian-cont-bm-lt img{
+    width: 249px;
+    height: 64px;
+}
+.qian-cont-bm-lt span{
+    font-size: 14px;
+}
+.qian-cont-bm-rt{
+    width: 960px;
+    margin-left: 21px;
+    border:1px solid #eee;
+    float:left;
+    padding-bottom: 50px;
+}
+.qian-cont-bm-rt h3{
+    font-size: 22px;
+    padding: 10px;
+    font-weight: 700;
+    border-bottom:1px solid #eee;
+}
+.qian-cont-bm-rt-list{
+    width: 960px;
+    margin-top: 20px;
+}
+.qian-cont-bm-rt-list ul li{
+    float: left;
+    margin-left: 45px;
+    font-size: 14px;
+    padding: 10px;
+}
+.qian-cont-bm-rt-list ul li:nth-child(5){
+    background: #ff6c7d;
+    color: white;
+    border-radius: 5px;
+}
+.qian-cont-xiaofei{
+    width: 960px;
+    margin-top: 20px;
+}
+.qian-cont-xiaofei li{
+    float: left;
+    margin-left: 50px;
+    padding:10px;
+    font-size: 16px;
+}
+.qian-cont-jilu{
+    width: 960px;
+    margin-top: 20px;
+    padding-left:20px;
+}
+.qian-cont-jilu-list{
+    border-bottom:1px solid #eee;
+}
+.qian-cont-jilu ul li{
+    float: left;
+    height: 40px;
+    line-height: 40px;
+    font-size: 14px;
+}
+.qian-cont-jilu ul li:nth-child(1){
+    width: 90px;
+}
+.qian-cont-jilu ul li:nth-child(2){
+    width: 400px;
+}
+.qian-cont-jilu ul li:nth-child(3){
+    width: 120px;
+}
+.qian-cont-jilu ul li:nth-child(4){
+    width: 90px;
+}
+.qian-cont-jilu ul li:nth-child(5){
+    width: 180px;
+}
+/* 动态绑定样式 */
+/* 猴币充值金额10 20 50 100 */
+.qian-cont-tp-rt-ct-list .listl{
+    border:1px solid #ff6c7d;
+    color: #ff6c7d;
+}
+/* 猴币充值记录 猴币消费记录 */
+.qian-cont-xiaofei .xiaofei{
+    background: #ff6c7d;
+    color: white;
+    border-radius: 5px;
+}
+
+
+.qianbaoerweima{
+    margin-left: 80px;
+}
